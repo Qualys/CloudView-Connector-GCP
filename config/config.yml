@@ -1,0 +1,6 @@
+defaults:
+  GcpApiKey: "./config/orgsupportjson.json"
+  ConnectorCreationJson: "./config/projectonboard.json"
+  QualysUsername: "QUALYS_API_USERNAME"
+  Baseurl: "Qualys CloudView API URL"  #include https:// in URL
+  Projects: "./config/projects.csv"
