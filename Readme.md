@@ -13,8 +13,9 @@ This reporsitory contains:
 3. A Sample CSV (includes GCP project Ids)
 4. Sample Service Account JSON keys (1 for Authenticating GCP SDK calls to list GCP projects within Organization and 1 for Onboarding GCP projects to Qualys Cloud View as connectors)
 
-### PLEASE NOTE : We do recommend using 2 different Service Account JSON keys for better management of permissions. The Service JSON key which will be used to authenticate GCP SDK and list GCP projects within GCP organization and folders will added as IAM member at GCP Organization level with Organization and Folder Viewer Permissions.
-	The other Service Account JSON Key, which will be used to onboard GCP projects as Connectors in Qualys Cloud View will be having Project Viewer and Security Viewer permissions to it.
+### PLEASE NOTE : We do recommend using 2 different Service Account JSON keys for better management of permissions, if you will be using the All settings in the project scope configuration. The Service Account JSON key, specified by GcpApiKey, which will be used to authenticate GCP SDK and list GCP projects within GCP organization and folders will added as IAM member at GCP Organization level with Organization and Folder Viewer Permissions.
+
+The other Service Account JSON Key, specified in ConnectorCreationJson, will be used to onboard GCP projects as Connectors in Qualys Cloud View. This service account will require Project Viewer and Security Viewer permissions on the projects scoped to create connectors.
 
 
 ## Deployment Modes:
